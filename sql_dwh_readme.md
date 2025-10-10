@@ -1,12 +1,10 @@
 # SQL Data Warehouse Project 🏢
 
-A real-world data warehouse built with SQL Server that transforms messy operational data into clean, analytics-ready insights. Think of it as giving raw business data a complete makeover!
+Building real-world data warehouse with SQL Server that transforms an operational data into clean, analytics-ready insights. Think of it as giving raw business data a complete makeover!
 
 ## 🎯 What's This All About?
 
-I built an end-to-end data warehouse that takes data from CRM and ERP systems, cleans it up, and makes it ready for business intelligence. The project covers sales analytics, customer intelligence, and product performance tracking.
-
-**Learning Journey:** This project was inspired by the Udemy course "Building a Modern Data Warehouse - Data Engineering Bootcamp" by Baraa Khatib Salkini, which I enhanced with additional analytics and custom reporting views.
+I built an end-to-end data warehouse that takes data from CRM and ERP systems, cleans it up, and makes it ready for business intelligence. The project covers sales analytics, customer metrics, and product performance tracking.
 
 ### The Cool Part 🌟
 Using the **Medallion Architecture** (Bronze → Silver → Gold), the data goes through multiple quality checks and transformations:
@@ -21,11 +19,11 @@ Using the **Medallion Architecture** (Bronze → Silver → Gold), the data goes
 - Star Schema dimensional modeling
 - Multi-layered ETL pipelines
 
-**Advanced SQL Techniques I Used:**
+**Advanced SQL Techniques:**
 - Window Functions (`ROW_NUMBER()`, `LAG()`, `PARTITION BY`)
 - CTEs for complex logic
 - Date/time functions (`DATETRUNC()`, `DATEDIFF()`)
-- Aggregations and joins galore
+- Aggregations and joins
 
 **Data Quality Checks:**
 - Primary key validation
@@ -87,11 +85,13 @@ This project shows I can:
 - Transform business questions into actionable insights
 - Design scalable data architectures
 
-**Real-world applications:** Sales forecasting, customer segmentation, product optimization, executive dashboards, churn prevention
+**Real-world applications:** Sales forecasting, customer segmentation, product optimization, executive dashboards, customer behavior analysis
 
 ## 🚀 The Bottom Line
 
-A complete data warehousing solution demonstrating enterprise-level data engineering skills - from raw data ingestion to business-ready analytics. Perfect for anyone who wants to see how modern data warehouses actually work!
+A complete data warehousing solution demonstrating enterprise-level data engineering skills - from raw data ingestion to business-ready analytics
+
+**Learning Journey:** This project was inspired by the Udemy course "Building a Modern Data Warehouse - Data Engineering Bootcamp" by Baraa Khatib Salkini.
 
 ---
 
