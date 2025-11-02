@@ -1,6 +1,6 @@
-# SQL Data Warehouse Project 🏢
+# Sales & Customer Analytics (SQL Data Warehouse Project) 🏢
 
-Building real-world data warehouse with SQL Server that transforms an operational data into clean, analytics-ready insights. Think of it as giving raw business data a complete makeover!
+Building real-world data warehouse with SQL Server that transforms an operational data into clean, analytics-ready insights. The goal is to give a complete makeover to the raw business data!
 
 ## 🎯 What's This All About?
 
@@ -94,5 +94,4 @@ A complete data warehousing solution demonstrating enterprise-level data enginee
 **Learning Journey:** This project was inspired by the Udemy course "Building a Modern Data Warehouse - Data Engineering Bootcamp" by Baraa Khatib Salkini.
 
 ---
-
 *Built with ❤️ and lots of SQL queries*
