@@ -11,6 +11,7 @@ Using the **Medallion Architecture** (Bronze → Silver → Gold), the data goes
 - **Bronze**: Raw data, straight from the source
 - **Silver**: Cleaned, validated, and standardized 
 - **Gold**: Business-ready analytics with star schema design
+![Data Architecture](docs/DWH Architecture.png)
 
 ## 🛠️ Tech Stack & Skills
 
