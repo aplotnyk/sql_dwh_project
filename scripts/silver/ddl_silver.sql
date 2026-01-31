@@ -82,3 +82,44 @@ maintenance NVARCHAR(50),
 dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 GO
+
+-- ====================================================================
+-- CREATE INDEXES FOR PERFORMANCE OPTIMIZATION
+-- ====================================================================
+
+-- Indexes for crm_cust_info (used in JOINs by gold.dim_customers)
+CREATE INDEX IX_crm_cust_info_cst_id 
+ON silver.crm_cust_info(cst_id);
+
+CREATE INDEX IX_crm_cust_info_cst_key 
+ON silver.crm_cust_info(cst_key);
+
+-- Indexes for crm_prd_info (used in JOINs by gold.dim_products)
+CREATE INDEX IX_crm_prd_info_prd_id 
+ON silver.crm_prd_info(prd_id);
+
+CREATE INDEX IX_crm_prd_info_prd_key 
+ON silver.crm_prd_info(prd_key);
+
+CREATE INDEX IX_crm_prd_info_cat_id 
+ON silver.crm_prd_info(cat_id);
+
+-- Indexes for crm_sales_details (fact table source)
+CREATE INDEX IX_crm_sales_details_sls_cust_id 
+ON silver.crm_sales_details(sls_cust_id);
+
+CREATE INDEX IX_crm_sales_details_sls_prd_key 
+ON silver.crm_sales_details(sls_prd_key);
+
+CREATE INDEX IX_crm_sales_details_sls_order_dt 
+ON silver.crm_sales_details(sls_order_dt);
+
+-- Indexes for ERP tables (used in JOINs)
+CREATE INDEX IX_erp_cust_az12_cid 
+ON silver.erp_cust_az12(cid);
+
+CREATE INDEX IX_erp_loc_a101_cid 
+ON silver.erp_loc_a101(cid);
+
+CREATE INDEX IX_erp_px_cat_g1v2_id 
+ON silver.erp_px_cat_g1v2(id);

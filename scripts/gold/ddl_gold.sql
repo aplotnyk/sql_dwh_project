@@ -56,7 +56,6 @@ FROM silver.crm_prd_info AS pn
 LEFT JOIN silver.erp_px_cat_g1v2 AS pc
 ON pn.cat_id = pc.id
 WHERE prd_end_dt IS NULL; -- Filtering out all historical data with an end date available
-SELECT * FROM gold.dim_products;
 
 -- ==========================================================================
 -- Create Fact: gold.fact_sales
@@ -77,4 +76,3 @@ LEFT JOIN gold.dim_products AS pr
 	ON sd.sls_prd_key = pr.product_number
 LEFT JOIN gold.dim_customers AS cu
 	ON sd.sls_cust_id = cu.customer_id;
-

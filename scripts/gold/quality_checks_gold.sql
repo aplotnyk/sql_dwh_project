@@ -43,10 +43,17 @@ HAVING COUNT(*) > 1;
 -- Checking gold.fact_sales
 -- =================================================================
 -- Check the data model connectivity between fact and dimensions
-SELECT * 
+-- (sales records without matching dimension records)
+-- Expectation: No Result
+-- For future optimisation: Turn the fact_sales to the Table for better performance,
+-- keep dimensions as views
+
+SELECT *
 FROM gold.fact_sales AS f
 LEFT JOIN gold.dim_customers AS c
 	ON c.customer_key = f.customer_key
 LEFT JOIN gold.dim_products AS p
 	ON p.product_key = f.product_key
 WHERE c.customer_key IS NULL OR p.product_key IS NULL;
+
+
