@@ -13,6 +13,25 @@ Using the **Medallion Architecture** (Bronze → Silver → Gold), the data goes
 - **Gold**: Business-ready analytics with star schema design
 ![Data Architecture](docs/DWH_Architecture.png)
 
+## 📐 Data Models (ERD)
+
+Each layer has its own data model designed for specific purposes:
+
+### Bronze Layer
+Raw data staging area with 6 tables from CRM and ERP source systems. No relationships enforced - data stored as-is for full traceability.
+
+![Bronze ERD](docs/Enterprie_dwh_Bronze_ERD.png)
+
+### Silver Layer
+Cleansed and standardized data with consistent formats, validated fields, and deduplication applied. Serves as the single source of truth.
+
+![Silver ERD](docs/Enterprie_dwh_Silver_ERD.png)
+
+### Gold Layer
+**Star Schema** design with fact and dimension tables optimized for analytics. Features surrogate keys, denormalized dimensions, and pre-calculated metrics for fast querying.
+
+![Gold ERD](docs/Enterprie_dwh_Gold_ERD.png)
+
 ## 🛠️ Tech Stack & Skills
 
 **Core Technologies:**
